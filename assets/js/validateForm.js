@@ -10,6 +10,7 @@ function validateForm(event) {
     let genderMale = document.getElementById('gender-male').checked
     let genderFemale = document.getElementById('gender-female').checked
     let email = document.getElementById('input-email').value
+    let address = document.getElementById('input-address').value
     let password = document.getElementById('input-password').value
     let confirmPassword = document.getElementById('input-confirm-password').value
     
@@ -29,6 +30,12 @@ function validateForm(event) {
     }
 
     if(!validateEmail(email)) {
+        event.preventDefault();
+        $('.error-box').show();
+        return
+    }
+    
+    if(!validateAddress(address)) {
         event.preventDefault();
         $('.error-box').show();
         return
@@ -110,6 +117,20 @@ function validatePassword(password, confirmPassword){
 
     if(password != confirmPassword) {
         errorMsg.innerHTML = "[!] Password not match!"
+        return false
+    }
+    
+    return true
+}
+
+function validateAddress(address) {
+    if(address == "") {
+        errorMsg.innerHTML = "[!] Address must be filled!"
+        return false
+    }
+
+    if(address.length <= 10) {
+        errorMsg.innerHTML = "[!] Please input full address"
         return false
     }
     

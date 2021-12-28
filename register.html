@@ -18,7 +18,15 @@
             </a>
             
             <div class="navbar-item-container">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+
                 <ul class="navbar-nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html">HOME</a>
+                    </li>
                     <li class="nav-item">
                         <a href="./about.html">ABOUT</a>
                     </li>
@@ -28,8 +36,8 @@
                     <li class="nav-item">
                         <a href="./system.html">SYSTEM</a>
                     </li>
-                </ul>
-            </div>       
+                </ul>  
+            </div>   
             
             <div class="nav-register-active">
                 <a href="./register.html">REGISTER</a>
@@ -39,64 +47,64 @@
     <!-- ----- end navbar ----- -->
 
     <!-- main content section -->
-    <section class="main-content">
-        <div class="regis-page">
-            <div class="cover-img">
-                <img src="./assets/images/Communism.jpg" alt="">
-            </div>
-            <div class="regis-form">
-                <form action="" class="form-container">
-                    <h1>Register Here</h1>
-                    <hr>
-                    
-                    <div class="form-item">
-                        <label for="name"><b>Full Name</b></label><br>
-                        <input type="text" placeholder="Your Name" name="name" id="input-name">
-                    </div>
-
-                    <div class="form-item">
-                        <label for="gender"><b>Gender</b></label><br>
-                        <input type="radio" name="select-gender" id="gender-male">
-                        <label for="gender-male">Male</label>
+    <div class="main-content">
+        <div class="regis-page"> 
+            <form action="" class="form-container">
+                <h1>Register Here</h1>
+                <hr>
                 
-                        <input type="radio" name="select-gender" id="gender-female">
-                        <label for="gender-female">Female</label>
-                    </div>
-
-                    <div class="form-item">
-                        <label for="email"><b>Email</b></label><br>
-                        <input type="email" placeholder="Your Email" name="email" id="input-email">
-                    </div>
-
-                    <div class="form-item">
-                        <label for="password"><b>Password</b></label><br>
-                        <input type="password" placeholder="Your Password" name="password" id="input-password">
-                    </div>
-
-                    <div class="form-item">
-                        <label for="confirm-password"><b>Confirm Password</b></label><br>
-                        <input type="password" placeholder="Repeat Your Password" name="confirm-password" id="input-confirm-password">
-                    </div>
-
-                    <div class="form-item">
-                        <input type="checkbox" name="user-agree" id="user-agree">
-                        <label for="user-agree">I Agree to the terms and conditions</label><br>
-                    </div>
-                    
-                    <button type="submit" class="form-button" id="submit">REGISTER</button>
-                </form>
-
-                <div class="success-box">
-                    <p id="success-msg">[*] REGISTER SUCCESS</p>
+                <div class="form-item">
+                    <label for="name"><b>Full Name</b></label>
+                    <input type="text" placeholder="Your Name" name="name" id="input-name">
                 </div>
 
-                <div class="error-box">
-                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                    <p id="error-msg"></p>
+                <div class="form-item">
+                    <label for="gender"><b>Gender</b></label>
+                    <input type="radio" name="select-gender" id="gender-male">
+                    <label for="gender-box">Male</label>
+            
+                    <input type="radio" name="select-gender" id="gender-female">
+                    <label for="gender-box">Female</label>
                 </div>
+
+                <div class="form-item">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" placeholder="Your Email" name="email" id="input-email">
+                </div>
+
+                <div class="form-item">
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" placeholder="Your Address" name="address" id="input-address">
+                </div>
+
+                <div class="form-item">
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Your Password" name="password" id="input-password">
+                </div>
+
+                <div class="form-item">
+                    <label for="confirm-password"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Repeat Your Password" name="confirm-password" id="input-confirm-password">
+                </div>
+
+                <div class="form-item-agree">
+                    <input type="checkbox" name="user-agree" id="user-agree">
+                    <label for="user-agree">I Agree to the terms and conditions</label>
+                </div>
+                
+                <button type="submit" class="form-button" id="submit">REGISTER</button>
+            </form>
+
+            <div class="success-box">
+                <p id="success-msg">[*] REGISTER SUCCESS</p>
             </div>
-          </div>
-    </section>
+
+            <div class="error-box">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <p id="error-msg"></p>
+            </div>
+        </div>
+    </div>
     <!-- end main content section -->
     
     <!-- jQery -->
