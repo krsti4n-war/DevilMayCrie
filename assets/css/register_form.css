@@ -1,8 +1,20 @@
+.regis-page {
+    background-image: url("../images/loadingscreen/loading_5.png");
+    height: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .form-container {
     padding: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .6);
     
     margin-top: 50px;
     margin-bottom: 20px;
@@ -30,7 +42,7 @@
     color: white;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .form-container button:hover {
@@ -55,8 +67,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
     outline: none;
-    transition: 0.5s;
-    max-width: 50%;
+    transition: .5s;
+    width: 55%;
 }
 
 .form-item input:focus {
@@ -90,7 +102,6 @@
 }
 
 .success-box {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: white;
 }
@@ -106,7 +117,22 @@
 }
 
 .error-box {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: white;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
 }
