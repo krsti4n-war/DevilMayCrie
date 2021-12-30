@@ -1,0 +1,36 @@
+.about-page {
+    background-image: url("../images/loadingscreen/loading_44.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page img {
+    width: 600px;
+    border: 3px solid royalblue;
+    /* filter: brightness(80%); */
+}
+
+.about-text {
+    /* height: 40%; */
+    padding: 50px;
+    margin: 50px;
+    color: black;
+    font-size: large;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.about-text h2{
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-page {
+        flex-direction: column;
+    }
+}

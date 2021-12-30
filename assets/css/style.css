@@ -113,20 +113,21 @@ html {
 }
 /* ----- end navbar ----- */
 
+
 /* ----- main content ----- */
 .main-content {
     height: 100%;
 }
 
 .main-page {
-    background-image: url("../images/86.jpg");
+    background-image: url("../images/loadingscreen/loading_8.png");
     height: 100%;
   
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 /* ----- end main content ----- */
+
 
 /* ----- footer ----- */
 .bottom-footer {
@@ -183,8 +184,12 @@ html {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* ----- end footer ----- */
 
+
+/* responsive */
 @media only screen and (max-width: 800px) {
+    /* ----- navbar ----- */
     .logo {
         padding-left: 25px;
         padding-right: 25px;
@@ -221,6 +226,7 @@ html {
         padding: 5px;
     }
 
+    /* Hamburger menu */
     .navbar-item-container input {
         display: block;
         position: absolute;
@@ -232,7 +238,7 @@ html {
         opacity: 0;
         z-index: 2;
     }
-
+    
     .navbar-item-container span {
         display: block;
         width: 32px;
@@ -284,7 +290,11 @@ html {
         background-color: rgba(0, 0, 0, .75);
         background-size: cover;
     }
+    /* Hamburger menu */
+    /* ----- end navbar ----- */
     
+    
+    /* ----- footer ----- */
     .social-media-list img {
         width: 25px;
         height: 25px;
@@ -295,13 +305,15 @@ html {
     }
     
     .footer-information img {
-        width: 100px;
+        width: 120px;
         height: 25px;
         padding: 10px;
         margin: 0;
     }
+    /* ----- end footer ----- */
 
 }
+/* responsive */
 
 ::-webkit-scrollbar {
     width: 10px;

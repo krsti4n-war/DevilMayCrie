@@ -1,0 +1,66 @@
+.character-page {
+    background-image: url("../images/loadingscreen/loading_51.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 150px;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.img-box img {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+}
+
+.img-box p {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    transition: .3s;
+}
+
+.img-box a:hover p {
+    color: red;
+}
+
+.img-box a:hover img {
+    width: 500px;
+    height: 500px;
+}
+
+@media only screen and (max-width: 800px) {
+    .character-page {
+        height: 150%;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    
+    .img-box {
+        margin: 50px;
+    }
+}

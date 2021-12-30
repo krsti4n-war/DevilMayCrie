@@ -27,10 +27,7 @@
 .form-container h1 {
     padding: 5px;
     text-align: center;
-}
-
-.form-container hr {
-    border-color: royalblue;
+    border-bottom: 2px solid royalblue;
     margin-bottom: 10px;
 }
 
@@ -46,7 +43,7 @@
 }
 
 .form-container button:hover {
-    background-color: rgb(65, 105, 255);
+    background-color: rgb(0, 55, 255);
 }
 
 .form-item {
@@ -68,11 +65,11 @@
     margin-bottom: 5px;
     outline: none;
     transition: .5s;
-    width: 55%;
+    max-width: 55%;
 }
 
 .form-item input:focus {
-    border: 2px solid #3B5FF9;
+    border: 2px solid #3b5ff9;
 }
 
 .form-item label[for=gender-box] {
@@ -135,4 +132,15 @@
 /* When moving the mouse over the close button */
 .closebtn:hover {
     color: black;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .form-item label {
+        width: 100px;
+    }
+
+    .form-item input {
+        max-width: 90%;
+    }
 }
