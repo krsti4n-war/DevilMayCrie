@@ -75,6 +75,16 @@ html {
     color: black;
 }
 
+.nav-item-active {
+    padding: 20px;
+}
+
+.nav-item-active a {
+    font-weight: bold;
+    font-size: x-large;
+    color: red;
+}
+
 .nav-register {
     padding: 20px;
     min-width: 10%;
@@ -271,7 +281,7 @@ html {
 
     .navbar-item-container input:checked ~ span {
         opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-2px, 0px);
         background: white;
     }
     .navbar-item-container input:checked ~ span:nth-last-child(3) {
@@ -287,6 +297,7 @@ html {
         display: block;
         position: fixed;
         padding-top: 100px;
+        width: 30%;
         background-color: rgba(0, 0, 0, .75);
         background-size: cover;
     }

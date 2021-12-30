@@ -65,7 +65,7 @@
     margin-bottom: 5px;
     outline: none;
     transition: .5s;
-    max-width: 55%;
+    width: 55%;
 }
 
 .form-item input:focus {
@@ -141,6 +141,6 @@
     }
 
     .form-item input {
-        max-width: 90%;
+        width: 90%;
     }
 }

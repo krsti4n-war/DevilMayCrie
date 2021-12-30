@@ -21,6 +21,7 @@
     color: black;
     font-size: large;
     background-color: rgba(255, 255, 255, .8);
+    /* max-width: 40%; */
 }
 
 .about-text h2{
