@@ -7,6 +7,8 @@
     <title>Devil May Crie 5</title>
     <link rel="icon" href="./assets/images/icon/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/home_page.css">
+
 </head>
 <body>
     <!-- ----- navbar ----- -->
@@ -47,8 +49,18 @@
 
     <!-- ----- main content section ----- -->
     <div class="main-content">
-        <div class="main-page"> 
-        </div>
+        <!-- Slider 1 -->
+        <div class="slider" id="slider1">
+            <!-- Slides -->
+            <div style="background-image:url(./assets/images/loadingscreen/loading_1.png)"></div>
+            <div style="background-image:url(./assets/images/loadingscreen/loading_10.png)"></div>
+            <div style="background-image:url(./assets/images/loadingscreen/loading_11.png)"></div>
+            <div style="background-image:url(./assets/images/loadingscreen/loading_12.png)"></div>
+            <div style="background-image:url(./assets/images/loadingscreen/loading_13.png)"></div>
+            <!-- The Arrows -->
+            <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+            <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+        </div> 
     </div>
     <!-- ----- end main content section ----- -->
 
@@ -79,9 +91,10 @@
     </footer>
     <!-- ----- end footer ----- -->
     
-    <!-- jQery -->
-    <script src="/assets/js/jquery-3.6.0.min.js"></script>
-    <!-- custom js -->
-    <script src="./assets/js/script.js"></script>
 </body>
+
+<!-- jQery -->
+<script src="/assets/js/jquery-3.6.0.min.js"></script>
+<!-- custom js -->
+<script src="./assets/js/slider.js"></script>
 </html>

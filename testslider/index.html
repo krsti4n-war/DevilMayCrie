@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devil May Crie 5</title>
     <link rel="icon" href="./assets/images/icon/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/register_page.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- ----- navbar ----- -->
@@ -24,23 +24,23 @@
                 <span></span>
 
                 <ul class="navbar-nav-list">
-                    <li class="nav-item">
-                        <a href="./index.html">HOME</a>
+                    <li class="nav-item-active">
+                        <a href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./about.html">ABOUT</a>
+                        <a href="#">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./character.html">CHARACTER</a>
+                        <a href="#">CHARACTER</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./system.html">SYSTEM</a>
+                        <a href="#">SYSTEM</a>
                     </li>
                 </ul>  
-            </div>   
+            </div>       
             
-            <div class="nav-register-active">
-                <a href="./register.html">REGISTER</a>
+            <div class="nav-register">
+                <a href="#">REGISTER</a>
             </div>
         </nav>
     </header>
@@ -48,64 +48,21 @@
 
     <!-- ----- main content section ----- -->
     <div class="main-content">
-        <div class="regis-page"> 
-            <form action="" class="form-container">
-                <h1>Register Here</h1>
-                
-                <div class="form-item">
-                    <label for="name"><b>Full Name</b></label>
-                    <input type="text" placeholder="Your Name" name="name" id="input-name">
-                </div>
-
-                <div class="form-item">
-                    <label for="gender"><b>Gender</b></label>
-                    <input type="radio" name="select-gender" id="gender-male">
-                    <label for="gender-box">Male</label>
-            
-                    <input type="radio" name="select-gender" id="gender-female">
-                    <label for="gender-box">Female</label>
-                </div>
-
-                <div class="form-item">
-                    <label for="email"><b>Email</b></label>
-                    <input type="email" placeholder="Your Email" name="email" id="input-email">
-                </div>
-
-                <div class="form-item">
-                    <label for="address"><b>Address</b></label>
-                    <input type="text" placeholder="Your Address" name="address" id="input-address">
-                </div>
-
-                <div class="form-item">
-                    <label for="password"><b>Password</b></label>
-                    <input type="password" placeholder="Your Password" name="password" id="input-password">
-                </div>
-
-                <div class="form-item">
-                    <label for="confirm-password"><b>Confirm Password</b></label>
-                    <input type="password" placeholder="Repeat Your Password" name="confirm-password" id="input-confirm-password">
-                </div>
-
-                <div class="form-item-agree">
-                    <input type="checkbox" name="user-agree" id="user-agree">
-                    <label for="user-agree">I Agree to the terms and conditions</label>
-                </div>
-                
-                <button type="submit" class="form-button" id="submit">REGISTER</button>
-            </form>
-
-            <div class="success-box">
-                <p id="success-msg">[*] REGISTER SUCCESS</p>
-            </div>
-
-            <div class="error-box">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                <p id="error-msg"></p>
-            </div>
-        </div>
+        <!-- Slider 1 -->
+        <div class="slider" id="slider1">
+            <!-- Slides -->
+            <div style="background-image:url(../assets/images/loadingscreen/loading_1.png)"></div>
+            <div style="background-image:url(../assets/images/loadingscreen/loading_10.png)"></div>
+            <div style="background-image:url(../assets/images/loadingscreen/loading_11.png)"></div>
+            <div style="background-image:url(../assets/images/loadingscreen/loading_12.png)"></div>
+            <div style="background-image:url(../assets/images/loadingscreen/loading_13.png)"></div>
+            <!-- The Arrows -->
+            <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path></svg></i>
+            <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+        </div> 
     </div>
     <!-- ----- end main content section ----- -->
-    
+
     <!-- ----- footer ----- -->
     <footer class="bottom-footer">
         <div class="footer-container">
@@ -132,10 +89,9 @@
         </div>
     </footer>
     <!-- ----- end footer ----- -->
+    
 </body>
-
 <!-- jQery -->
-<script src="/assets/js/jquery-3.6.0.min.js"></script>
-<!-- custom js -->
-<script src="./assets/js/validateForm.js"></script>
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="./script.js"></script>
 </html>
