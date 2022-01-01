@@ -13,41 +13,41 @@ function validateForm(event) {
     let address = document.getElementById('input-address').value;
     let password = document.getElementById('input-password').value;
     let confirmPassword = document.getElementById('input-confirm-password').value;
-    
+
     let agree = document.getElementById('user-agree').checked;
     $('.error-box').hide();
 
-    if(!validateName(name)) {
-        event.preventDefault();
-        $('.error-box').show();
-        return
-    }
-    
-    if(!validateGender(genderMale, genderFemale)) {
+    if (!validateName(name)) {
         event.preventDefault();
         $('.error-box').show();
         return
     }
 
-    if(!validateEmail(email)) {
-        event.preventDefault();
-        $('.error-box').show();
-        return
-    }
-    
-    if(!validateAddress(address)) {
+    if (!validateGender(genderMale, genderFemale)) {
         event.preventDefault();
         $('.error-box').show();
         return
     }
 
-    if(!validatePassword(password, confirmPassword)) {
+    if (!validateEmail(email)) {
         event.preventDefault();
         $('.error-box').show();
         return
     }
-   
-    if(!validateAgree(agree)) {
+
+    if (!validateAddress(address)) {
+        event.preventDefault();
+        $('.error-box').show();
+        return
+    }
+
+    if (!validatePassword(password, confirmPassword)) {
+        event.preventDefault();
+        $('.error-box').show();
+        return
+    }
+
+    if (!validateAgree(agree)) {
         event.preventDefault();
         $('.error-box').show();
         return
@@ -57,22 +57,22 @@ function validateForm(event) {
     errorBox.innerHTML = ""
 }
 
-function validateName(name){
-    if(name == "") {
+function validateName(name) {
+    if (name == "") {
         errorBox.innerHTML = "[!] Name must be filled!"
         return false
     }
 
-    if(name.length <= 5) {
+    if (name.length <= 5) {
         errorBox.innerHTML = "[!] Name must be more than 5 characters!"
         return false
     }
 
-    for(let i=0;i<name.length;i++){
-        if((!(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z') && !(name.charAt(i) >= 'a' && name.charAt(i) <= 'z')) 
-            && !(name.charAt(i) == ' ')){
-                errorBox.innerHTML = "[!] Name must be alphabet!"
-                return false
+    for (let i = 0; i < name.length; i++) {
+        if ((!(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z') && !(name.charAt(i) >= 'a' && name.charAt(i) <= 'z')) &&
+            !(name.charAt(i) == ' ')) {
+            errorBox.innerHTML = "[!] Name must be alphabet!"
+            return false
         }
     }
 
@@ -80,49 +80,49 @@ function validateName(name){
 }
 
 function validateGender(genderMale, genderFemale) {
-    if(!genderMale && !genderFemale){
+    if (!genderMale && !genderFemale) {
         errorBox.innerHTML = "[!] Gender must be checked!"
         return false
     }
-    return true 
+    return true
 }
 
 function validateEmail(email) {
-    if(email == "") {
+    if (email == "") {
         errorBox.innerHTML = "[!] Email must be filled!"
         return false
     }
 
-    if(!(email.endsWith('@gmail.com'))) {
+    if (!(email.endsWith('@gmail.com'))) {
         errorBox.innerHTML = "[!] Email is Invalid!"
         return false
     }
-    
+
     return true
 }
 
 function validateAddress(address) {
-    if(address == "") {
+    if (address == "") {
         errorBox.innerHTML = "[!] Address must be filled!"
         return false
     }
 
-    if(address.length <= 10) {
+    if (address.length <= 10) {
         errorBox.innerHTML = "[!] Please input full address"
         return false
     }
-    
+
     return true
 }
 
-function validatePassword(password, confirmPassword){
+function validatePassword(password, confirmPassword) {
 
-    if(password == "") {
+    if (password == "") {
         errorBox.innerHTML = "[!] Password must be filled!"
         return false
     }
 
-    if(password.length < 8 || password.length > 20) {
+    if (password.length < 8 || password.length > 20) {
         errorBox.innerHTML = "[!] Password must between 8-20 characters!"
         return false
     }
@@ -132,11 +132,11 @@ function validatePassword(password, confirmPassword){
     let cont_sp_char = -1
     var specialCharacters = "!@#$%^&*,()-+";
     for (var i = 0; i < password.length; i++) {
-        if(password.charAt(i) >= 'A' && password.charAt(i) <= 'Z') {
+        if (password.charAt(i) >= 'A' && password.charAt(i) <= 'Z') {
             cont_up_char = 1
         }
 
-        if(password.charAt(i) >= 'a' && password.charAt(i) <= 'z') {
+        if (password.charAt(i) >= 'a' && password.charAt(i) <= 'z') {
             cont_lw_char = 1
         }
         if (specialCharacters.indexOf(password.charAt(i)) != -1) {
@@ -144,39 +144,39 @@ function validatePassword(password, confirmPassword){
         }
     }
 
-    if(cont_up_char == -1) {  
+    if (cont_up_char == -1) {
         errorBox.innerHTML = "[!] Password must be contain upper case!"
         return false
     }
 
-    if(cont_lw_char == -1) {  
+    if (cont_lw_char == -1) {
         errorBox.innerHTML = "[!] Password must be contain lower case!"
         return false
     }
 
-    if(cont_sp_char == -1) {  
+    if (cont_sp_char == -1) {
         errorBox.innerHTML = "[!] Password must be contain special character!"
         return false
     }
 
-    if(confirmPassword == "") {
+    if (confirmPassword == "") {
         errorBox.innerHTML = "[!] Confirm Password must be filled!"
         return false
     }
 
-    if(password != confirmPassword) {
+    if (password != confirmPassword) {
         errorBox.innerHTML = "[!] Password not match!"
         return false
     }
-    
+
     return true
 }
 
 function validateAgree(agree) {
-    if(!agree){
+    if (!agree) {
         errorBox.innerHTML = "[!] Agree checkbox must be checked!"
         return false
     }
 
-    return true 
+    return true
 }
