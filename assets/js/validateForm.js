@@ -1,20 +1,20 @@
-let errorMsg = document.getElementById('error-msg')
+let errorBox = document.getElementById('error-msg');
 
-let btn = document.getElementById('submit')
-btn.addEventListener('click',(e) => {
+let btn = document.getElementById('submit');
+btn.addEventListener('click', (e) => {
     validateForm(e)
 })
 
 function validateForm(event) {
-    let name = document.getElementById('input-name').value
-    let genderMale = document.getElementById('gender-male').checked
-    let genderFemale = document.getElementById('gender-female').checked
-    let email = document.getElementById('input-email').value
-    let address = document.getElementById('input-address').value
-    let password = document.getElementById('input-password').value
-    let confirmPassword = document.getElementById('input-confirm-password').value
+    let name = document.getElementById('input-name').value;
+    let genderMale = document.getElementById('gender-male').checked;
+    let genderFemale = document.getElementById('gender-female').checked;
+    let email = document.getElementById('input-email').value;
+    let address = document.getElementById('input-address').value;
+    let password = document.getElementById('input-password').value;
+    let confirmPassword = document.getElementById('input-confirm-password').value;
     
-    let agree = document.getElementById('user-agree').checked
+    let agree = document.getElementById('user-agree').checked;
     $('.error-box').hide();
 
     if(!validateName(name)) {
@@ -54,27 +54,76 @@ function validateForm(event) {
     }
 
     $('.success-box').show();
-    errorMsg.innerHTML = ""
+    errorBox.innerHTML = ""
 }
 
-function validateAgree(agree) {
-    if(!agree){
-        errorMsg.innerHTML = "[!] Agree checkbox must be checked!"
+function validateName(name){
+    if(name == "") {
+        errorBox.innerHTML = "[!] Name must be filled!"
         return false
     }
 
+    if(name.length <= 5) {
+        errorBox.innerHTML = "[!] Name must be more than 5 characters!"
+        return false
+    }
+
+    for(let i=0;i<name.length;i++){
+        if((!(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z') && !(name.charAt(i) >= 'a' && name.charAt(i) <= 'z')) 
+            && !(name.charAt(i) == ' ')){
+                errorBox.innerHTML = "[!] Name must be alphabet!"
+                return false
+        }
+    }
+
+    return true
+}
+
+function validateGender(genderMale, genderFemale) {
+    if(!genderMale && !genderFemale){
+        errorBox.innerHTML = "[!] Gender must be checked!"
+        return false
+    }
     return true 
+}
+
+function validateEmail(email) {
+    if(email == "") {
+        errorBox.innerHTML = "[!] Email must be filled!"
+        return false
+    }
+
+    if(!(email.endsWith('@gmail.com'))) {
+        errorBox.innerHTML = "[!] Email is Invalid!"
+        return false
+    }
+    
+    return true
+}
+
+function validateAddress(address) {
+    if(address == "") {
+        errorBox.innerHTML = "[!] Address must be filled!"
+        return false
+    }
+
+    if(address.length <= 10) {
+        errorBox.innerHTML = "[!] Please input full address"
+        return false
+    }
+    
+    return true
 }
 
 function validatePassword(password, confirmPassword){
 
     if(password == "") {
-        errorMsg.innerHTML = "[!] Password must be filled!"
+        errorBox.innerHTML = "[!] Password must be filled!"
         return false
     }
 
     if(password.length < 8 || password.length > 20) {
-        errorMsg.innerHTML = "[!] Password must between 8-20 characters!"
+        errorBox.innerHTML = "[!] Password must between 8-20 characters!"
         return false
     }
 
@@ -96,87 +145,38 @@ function validatePassword(password, confirmPassword){
     }
 
     if(cont_up_char == -1) {  
-        errorMsg.innerHTML = "[!] Password must be contain upper case!"
+        errorBox.innerHTML = "[!] Password must be contain upper case!"
         return false
     }
 
     if(cont_lw_char == -1) {  
-        errorMsg.innerHTML = "[!] Password must be contain lower case!"
+        errorBox.innerHTML = "[!] Password must be contain lower case!"
         return false
     }
 
     if(cont_sp_char == -1) {  
-        errorMsg.innerHTML = "[!] Password must be contain special character!"
+        errorBox.innerHTML = "[!] Password must be contain special character!"
         return false
     }
 
     if(confirmPassword == "") {
-        errorMsg.innerHTML = "[!] Confirm Password must be filled!"
+        errorBox.innerHTML = "[!] Confirm Password must be filled!"
         return false
     }
 
     if(password != confirmPassword) {
-        errorMsg.innerHTML = "[!] Password not match!"
+        errorBox.innerHTML = "[!] Password not match!"
         return false
     }
     
     return true
 }
 
-function validateAddress(address) {
-    if(address == "") {
-        errorMsg.innerHTML = "[!] Address must be filled!"
+function validateAgree(agree) {
+    if(!agree){
+        errorBox.innerHTML = "[!] Agree checkbox must be checked!"
         return false
     }
 
-    if(address.length <= 10) {
-        errorMsg.innerHTML = "[!] Please input full address"
-        return false
-    }
-    
-    return true
-}
-
-function validateEmail(email) {
-    if(email == "") {
-        errorMsg.innerHTML = "[!] Email must be filled!"
-        return false
-    }
-
-    if(!(email.endsWith('@gmail.com'))) {
-        errorMsg.innerHTML = "[!] Email is Invalid!"
-        return false
-    }
-    
-    return true
-}
-
-function validateGender(genderMale, genderFemale) {
-    if(!genderMale && !genderFemale){
-        errorMsg.innerHTML = "[!] Gender must be checked!"
-        return false
-    }
     return true 
-}
-
-function validateName(name){
-    if(name == "") {
-        errorMsg.innerHTML = "[!] Name must be filled!"
-        return false
-    }
-
-    if(name.length <= 5) {
-        errorMsg.innerHTML = "[!] Name must be more than 5 characters!"
-        return false
-    }
-
-    for(let i=0;i<name.length;i++){
-        if((!(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z') && !(name.charAt(i) >= 'a' && name.charAt(i) <= 'z')) 
-            && !(name.charAt(i) == ' ')){
-                errorMsg.innerHTML = "[!] Name must be alphabet!"
-                return false
-        }
-    }
-
-    return true
 }

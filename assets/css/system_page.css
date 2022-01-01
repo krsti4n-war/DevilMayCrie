@@ -12,22 +12,32 @@
     align-items: center;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
 .system-info {
-    padding: 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, .6);
-    
-    margin-top: 50px;
-    margin-bottom: 20px;
     min-width: 30%;
 
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    color: white;
     display: flex;
     flex-direction: column;
 }
 
 .system-info h1 {
-    padding: 10px;
     background-color: rgba(255, 0, 0, .5);
+    padding: 10px;
 }
 
 .system-info h2 {
@@ -36,8 +46,8 @@
 }
 
 .requirement-container {
-    display: flex;
     padding-top: 10px;
+    display: flex;
 }
 
 .minimum-req {
@@ -47,17 +57,6 @@
 .recommend-req {
     padding: 10px;
 }
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td {
-    text-align: left;
-    padding: 5px;
-}
-
 
 @media only screen and (max-width: 800px) {
     .requirement-container {
@@ -71,5 +70,4 @@ td {
     .recommend-req {
         margin-top: 10px;
     }
-
 }

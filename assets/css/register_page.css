@@ -14,38 +14,39 @@
 }
 
 .form-container {
-    padding: 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, .6);
-    
-    margin-top: 50px;
-    margin-bottom: 20px;
     min-width: 30%;
 
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    color: white;
     display: flex;
     flex-direction: column;
 }
 
 .form-container h1 {
     padding: 5px;
-    text-align: center;
-    border-bottom: 2px solid royalblue;
     margin-bottom: 10px;
+    border-bottom: 2px solid royalblue;
+    text-align: center;
 }
 
 .form-container button {
     height: 40px;
     border: none;
-    margin-top: 10px;
     background-color: royalblue;
+    margin-top: 10px;
+
     color: white;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
     transition: .5s;
 }
 
 .form-container button:hover {
-    background-color: rgb(0, 55, 255);
+    background-color: blue;
 }
 
 .form-item {
@@ -53,25 +54,26 @@
 }
 
 .form-item label {
-    font-size: 1em;
-    font-weight: 400;
+    width: 150px;
     padding-right: 20px;
     display: inline-block;
-    width: 150px;
+
     text-align: start;
+    font-size: medium;
+    font-weight: 400;
 }
 
 .form-item input {
+    width: 55%;
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     outline: none;
     transition: .5s;
-    width: 55%;
 }
 
 .form-item input:focus {
-    border: 2px solid #3b5ff9;
+    border: 2px solid royalblue;
 }
 
 .form-item label[for=gender-box] {
@@ -82,10 +84,6 @@
     width: 20px;
 }
 
-.form-item input:focus {
-    border: 2px solid #3B5FF9;
-}
-
 .form-item-agree {
     padding: 5px;
 }
@@ -93,49 +91,46 @@
 .success-box {
     display: none;
     min-width: 30%;
+    background-color: green;
     padding: 5px;
     padding-bottom: 10px;
     margin-left: 20px;
-    background-color: green;
     border-radius: 5px;
 }
 
 .success-box {
-    font-weight: bold;
     color: white;
+    font-weight: bold;
 }
 
 .error-box {
     display: none;
     min-width: 30%;
+    background-color: red;
     padding: 5px;
     padding-bottom: 10px;
     margin-left: 20px;
-    background-color: red;
     border-radius: 5px;
 }
 
 .error-box {
-    font-weight: bold;
     color: white;
+    font-weight: bold;
 }
 
 /* The close button */
-.closebtn {
+.close-btn {
     margin-left: 15px;
-    color: white;
-    font-weight: bold;
     float: right;
-    font-size: 1em;
+    font-weight: bold;
     cursor: pointer;
     transition: .3s;
 }
 
 /* When moving the mouse over the close button */
-.closebtn:hover {
+.close-btn:hover {
     color: black;
 }
-
 
 @media only screen and (max-width: 800px) {
     .form-item label {

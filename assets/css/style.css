@@ -17,10 +17,10 @@ html {
 
 /* ----- navbar ----- */
 .top-navbar {
-    overflow: hidden;
-    position: fixed;
     min-width: 100%;
     background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    overflow: hidden;
     border-bottom: 2px solid rgba(255, 0, 0, .75);
     z-index: 3;
 }
@@ -64,9 +64,9 @@ html {
 }
 
 .nav-item a {
+    color: white;
     font-weight: normal;
     font-size: x-large;
-    color: white;
     transition: .3s;
 }
 
@@ -81,15 +81,15 @@ html {
 }
 
 .nav-item-active a {
+    color: red;
     font-weight: bold;
     font-size: x-large;
-    color: red;
 }
 
 .nav-register {
-    padding: 20px;
     min-width: 10%;
     background-color: rgb(200, 0, 0);
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,9 +97,9 @@ html {
 }
 
 .nav-register a {
+    color: white;
     font-weight: normal;
     font-size: x-large;
-    color: white;
     transition: .3s;
 }
 
@@ -108,9 +108,9 @@ html {
 }
 
 .nav-register-active {
-    padding: 20px;
     min-width: 10%;
     background-color: rgb(150, 0, 0);
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,15 +129,6 @@ html {
 .main-content {
     height: 100%;
 }
-
-.main-page {
-    background-image: url("../images/loadingscreen/loading_8.png");
-    height: 100%;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /* ----- end main content ----- */
 
 
@@ -145,15 +136,15 @@ html {
 .bottom-footer {
     min-height: 40%;
     background-color: black;
-    color: white;
     padding-bottom: 10px;
+    color: white;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border-top: 2px solid rgba(255, 0, 0, .75);
 }
 
@@ -169,17 +160,16 @@ html {
 
 .social-media-list {
     width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid royalblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid royalblue;
-    margin-bottom: 10px;
 }
 
 .social-media-list img {
     width: 50px;
     height: 50px;
-    justify-content: center;
     padding: 15px;
 }
 
@@ -191,7 +181,6 @@ html {
 .footer-information img {
     width: 200px;
     height: 50px;
-    justify-content: center;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -222,9 +211,9 @@ html {
         order: 3;
 
         display: flex;
-        flex-direction: column;
         align-items: flex-end;
         justify-content: center;
+        flex-direction: column;
         
         user-select: none;
         z-index: 1;
