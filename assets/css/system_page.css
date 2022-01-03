@@ -1,7 +1,7 @@
 .system-page {
     height: 100%;
 
-    background-image: url("../images/loadingscreen/loading_20.png");
+    background-image: url("../images/background/bg_sys.png");
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;

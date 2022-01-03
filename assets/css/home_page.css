@@ -50,3 +50,85 @@
 .slider > i.left:active {
     transform: translateY(1px);
 }
+
+.intro-game {
+    height: 100%;
+    background-color: black;
+    background-image: url("../images/background/bg_intro_game.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro-text {
+    width: 30%;
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.intro-text h2{
+    margin-bottom: 20px;
+}
+
+.pre-about {
+    height: 100%;
+    background-color: black;
+    background-image: url("../images/background/bg_pre_about.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.pre-about h1 {
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid red;
+}
+
+.pre-about button {
+    height: 5%;
+    width: 20%;
+    
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px solid red;
+    padding: 10;
+    margin-top: 10px;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.pre-about button:hover {
+    background-color: white;
+    border-color: royalblue;
+    color: black;
+}
+
+.pre-about-text {
+    width: 35%;
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 20px;
+}

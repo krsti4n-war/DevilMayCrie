@@ -5,7 +5,6 @@ $(document).ready(function() {
     var sliderIntervalID;
 
     var set = $.extend({
-        slidePause: 5000,
         fadeSpeed: 1000,
     });
 
@@ -13,20 +12,11 @@ $(document).ready(function() {
 
     $slider.find("> div").not(".show").fadeOut();
 
-    //Autoplay Slider
-    startSlider();
-
     //Next Slide
     $slider.find("> .right").click(nextSlide);
 
     //Previous Slide
     $slider.find("> .left").click(prevSlide);
-
-    function startSlider() {
-        sliderIntervalID = setInterval(function() {
-            nextSlide();
-        }, set.slidePause);
-    }
 
     function nextSlide() {
         position = $slider.find(".show").index() + 1;
@@ -46,17 +36,7 @@ $(document).ready(function() {
         $slider
             .find("> div")
             .eq(position)
-            .fadeIn(set.fadeSpeed)
+            .fadeIn(1000)
             .addClass("show");
     }
-
-    // on mouseover stop the autoplay
-    $slider.mouseover(function() {
-        clearInterval(sliderIntervalID);
-    })
-    
-    // on mouseout starts the autoplay
-    $slider.mouseout(function() {
-        startSlider();
-    });
 });
