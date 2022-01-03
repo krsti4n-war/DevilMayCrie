@@ -4,7 +4,7 @@
     background-image: url("../images/loadingscreen/loading_44.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 
     display: flex;
     justify-content: center;

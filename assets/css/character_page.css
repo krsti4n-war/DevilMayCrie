@@ -5,7 +5,7 @@
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
 
 @media only screen and (max-width: 800px) {
     .character-page {
-        height: 150%;
+        padding-top: 50px;
     }
 
     .image-container {

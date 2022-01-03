@@ -6,13 +6,13 @@ btn.addEventListener('click', (e) => {
 })
 
 function validateForm(event) {
-    let name = document.getElementById('input-name').value;
+    let name = document.getElementById('regis-name').value;
     let genderMale = document.getElementById('gender-male').checked;
     let genderFemale = document.getElementById('gender-female').checked;
-    let email = document.getElementById('input-email').value;
-    let address = document.getElementById('input-address').value;
-    let password = document.getElementById('input-password').value;
-    let confirmPassword = document.getElementById('input-confirm-password').value;
+    let email = document.getElementById('regis-email').value;
+    let address = document.getElementById('regis-address').value;
+    let password = document.getElementById('regis-password').value;
+    let confirmPassword = document.getElementById('regis-confirm-password').value;
 
     let agree = document.getElementById('user-agree').checked;
     $('.error-box').hide();
