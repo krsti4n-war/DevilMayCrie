@@ -50,3 +50,8 @@
 .slider > i.left:active {
     transform: translateY(1px);
 }
+
+#slider2 {
+    overflow: hidden;
+    max-height: 100%;
+}
