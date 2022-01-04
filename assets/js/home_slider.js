@@ -2,11 +2,6 @@ $(document).ready(function() {
     var $slider = $(".slider")
     var size = $slider.find("> div").length;
     var position = 0;
-    var sliderIntervalID;
-
-    var set = $.extend({
-        fadeSpeed: 1000,
-    });
 
     $slider.find("div:first-of-type").addClass("show");
 

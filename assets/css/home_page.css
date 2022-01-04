@@ -84,7 +84,7 @@
     background-image: url("../images/background/bg_pre_about.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right;
+    background-position: center center;
 
     display: flex;
     justify-content: center;
@@ -94,8 +94,6 @@
 }
 
 .pre-about h1 {
-    background-color: rgba(0, 0, 0, .6);
-
     color: white;
     font-size: 60px;
     margin-bottom: 20px;
@@ -108,10 +106,9 @@
     
     background-color: rgba(0, 0, 0, .6);
     border: 2px solid red;
-    padding: 10;
-    margin-top: 10px;
 
     color: white;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     transition: .5s;
@@ -130,5 +127,129 @@
     color: white;
     font-size: large;
     padding: 10px;
+    margin-bottom: 30px;
+}
+
+.pre-character {
+    height: 100%;
+    background-color: black;
+    background-image: url("../images/background/character_home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.pre-character h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid red;
+}
+
+.pre-character h2 {
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: 32px;
     margin-bottom: 20px;
+}
+
+.pre-character button {
+    height: 5%;
+    width: 20%;
+    
+    background-color: rgba(0, 0, 0, .6);
+    border: 2px solid red;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.pre-character button:hover {
+    background-color: white;
+    border-color: royalblue;
+    color: black;
+}
+
+.pre-character-text {
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: large;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.pre-system {
+    height: 100%;
+    background-color: black;
+    background-image: url("../images/background/system_home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.pre-system h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid red;
+}
+
+.pre-system h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.pre-system-content {
+    display: flex;
+    align-items: center;
+}
+
+.pre-system-content img {
+    width: 500px;
+    border: 3px solid royalblue;
+}
+
+.pre-system-text {
+    background-color: rgba(0, 0, 0, .6);
+
+    color: white;
+    font-size: large;
+    padding: 50px;
+    margin: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .pre-system-content {
+        padding-top: 50px;
+        flex-direction: column;
+    }
+    
+    .pre-system-text {
+        width: 80%;
+        padding: 30px;
+        margin: 20px;
+        font-size: medium;
+    }
 }
