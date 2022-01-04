@@ -218,9 +218,29 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .intro-text {
+        width: 80%;
+    }
+
+    .pre-about button {
+        width: 40%;
+    }
+
+    .pre-about-text {
+        width: 80%;
+    }
+
+    .pre-character button {
+        width: 40%;
+    }
+
     .pre-system-content {
         padding-top: 50px;
         flex-direction: column;
+    }
+
+    .pre-system-content img {
+        width: 400px;
     }
     
     .pre-system-text {
