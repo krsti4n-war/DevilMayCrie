@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    var $slider = $(".slider")
+function sliderResponsive($slider){
     var size = $slider.find("> div").length;
     var position = 0;
 
@@ -34,4 +33,13 @@ $(document).ready(function() {
             .fadeIn(1000)
             .addClass("show");
     }
+}
+
+
+$(document).ready(function() {
+    var $slider1 = $("#slider1")
+    sliderResponsive($slider1)
+    
+    var $slider2 = $("#slider2")
+    sliderResponsive($slider2)
 });
