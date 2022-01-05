@@ -209,7 +209,7 @@
     z-index: 1;
 }
 
-#gameplay_video {
+.gameplay_video {
     border: none;
     height: 100%;
     width: 100%;
