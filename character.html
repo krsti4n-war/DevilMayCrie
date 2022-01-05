@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/images/icon/icon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/character_page.css">
+    <link rel="stylesheet" href="./assets/css/character_overlay.css">
 </head>
 <body>
     <!-- ----- navbar ----- -->
@@ -51,22 +52,54 @@
         <div class="character-page">
             <div class="image-container">
                 <div class="img-box">
-                    <a href="#">
+                    <a class="trigger-overlay" id="trigger-overlay1">
                         <img src="./assets/images/character/Takao_META.png" alt="">
                         <p>Takao</p>
                     </a>
+                    <div class="overlay-bg" id="overlay-bg1">
+                        <div class="overlay-text">
+                            <p> 
+                                Takao wares a white Admiral suit with short skirts, a white bow in her hair, a pair of black stockings, and a pair of lazy shoes of the same color. 
+                                Her left hand holds a katana and at both of her sides she's equipped with an arsenal of artillery and torpedoes. 
+                                Takao's ears do not stand up the same way her sister's do, instead they stick out at the sides.
+                            </p>
+                        </div>
+                        <img src="./assets/images/character/Takao_META.png" alt="">
+                    </div>
                 </div>
                 <div class="img-box">
-                    <a href="#">
-                        <img src="./assets/images/character/Ark_Royal_META.png" alt="">
+                    <a class="trigger-overlay" id="trigger-overlay2">
+                        <img src="./assets/images/character/ArkRoyal_META.png" alt="">
                         <p>Ark Royal</p>
                     </a>
+                    <div class="overlay-bg" id="overlay-bg2">
+                        <div class="overlay-text">
+                            <p> 
+                                She wears a blue cropped jacket with red & yellow accents, a white & yellow collar and black garter straps on her arms over a white collared buttoned shirt with a cleavage cutout,
+                                a red slim & fit corset wrapped around her mid-section with yellow accents alongside a blue belt with yellow accents and circular golden buckle,
+                                black pencil skirt with a blue waist cape and a white wide garter, black thigh-high heeled boots with garter straps and white gloves.
+                            </p>
+                        </div>
+                        <img src="./assets/images/character/ArkRoyal_META.png" alt="" style="margin-top: 100px;">
+                    </div>
                 </div>
                 <div class="img-box">
-                    <a href="#">
+                    <a class="trigger-overlay" id="trigger-overlay3">
                         <img src="./assets/images/character/Kawakaze.png" alt="">
                         <p>Kawakaze</p>
                     </a>
+                    <div class="overlay-bg" id="overlay-bg3">
+                        <div class="overlay-text">
+                            <p> 
+                                She has a waist-length silver hair with black-tipped wolf ears on top of her head,
+                                she has blue eyes and a silver wolf-like tail. 
+                                She wears a white dress with a black sailor collar and a teal necktie, 
+                                black high-waist skirt, black thigh-high boots and a detached black-trimmed miko-like sleeves 
+                                with black ribbon scarfs and teal ribbon bows.
+                            </p>
+                        </div>
+                        <img src="./assets/images/character/Kawakaze.png" alt="">
+                    </div>
                 </div>
             </div> 
         </div>
@@ -101,4 +134,9 @@
     <!-- ----- end footer ----- -->
     
 </body>
+
+<!-- jQery -->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<!-- custom js -->
+<script src="./assets/js/character_overlay.js"></script>
 </html>
