@@ -10,6 +10,11 @@ a:focus {
     text-decoration: none;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
 body, 
 html {
     height: 100%;
@@ -129,6 +134,7 @@ html {
 .main-content {
     height: 100%;
     width: 100%;
+    scroll-snap-align: start;
     scroll-behavior: smooth;
 }
 /* ----- end main content ----- */
@@ -143,6 +149,7 @@ html {
     overflow: hidden;
     padding-bottom: 10px;
     color: white;
+    scroll-snap-align: end;
 }
 
 .footer-container {
