@@ -1,0 +1,142 @@
+.regis-page {
+    height: 100%;
+    background-image: url("../images/background/bg_regis.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    min-width: 30%;
+
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h1 {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid royalblue;
+    text-align: center;
+}
+
+.form-container button {
+    height: 40px;
+    border: none;
+    background-color: royalblue;
+    margin-top: 10px;
+
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-container button:hover {
+    background-color: blue;
+}
+
+.form-item {
+    padding: 5px;
+}
+
+.form-item label {
+    width: 150px;
+    padding-right: 20px;
+    display: inline-block;
+
+    text-align: start;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.form-item input {
+    width: 55%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    transition: .5s;
+}
+
+.form-item input:focus {
+    border: 2px solid royalblue;
+}
+
+.form-item label[for=gender-box] {
+    width: 40px;
+}
+
+.form-item input[type=radio] {
+    width: 20px;
+}
+
+.form-item-agree {
+    padding: 5px;
+}
+
+.success-box {
+    display: none;
+    min-width: 30%;
+    background-color: green;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.success-box {
+    color: white;
+    font-weight: bold;
+}
+
+.error-box {
+    display: none;
+    min-width: 30%;
+    background-color: red;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.error-box {
+    color: white;
+    font-weight: bold;
+}
+
+/* The close button */
+.close-btn {
+    margin-left: 15px;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* When moving the mouse over the close button */
+.close-btn:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    .form-item label {
+        width: 100px;
+    }
+
+    .form-item input {
+        width: 90%;
+    }
+}

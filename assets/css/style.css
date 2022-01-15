@@ -306,8 +306,18 @@ html {
     }
     /* Hamburger menu */
     /* ----- end navbar ----- */
+
+    /* ----- main content ----- */
+    .main-content {
+        scroll-snap-align: none;
+    }
+    /* ----- end main content ----- */
     
     /* ----- footer ----- */
+    .bottom-footer {
+        scroll-snap-align: none;
+    }
+
     .social-media-list img {
         width: 25px;
         height: 25px;

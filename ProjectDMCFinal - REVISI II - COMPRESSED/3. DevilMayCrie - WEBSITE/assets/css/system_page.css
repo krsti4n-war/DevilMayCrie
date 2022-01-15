@@ -1,0 +1,72 @@
+.system-page {
+    height: 100%;
+    background-image: url("../images/background/bg_sys.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+.system-info {
+    min-width: 30%;
+
+    background-color: rgba(0, 0, 0, .6);
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.system-info h1 {
+    background-color: rgba(255, 0, 0, .5);
+    padding: 10px;
+}
+
+.system-info h2 {
+    background-color: rgba(65, 105, 225, .5);
+    padding: 5px;
+}
+
+.requirement-container {
+    padding-top: 10px;
+    display: flex;
+}
+
+.minimum-req {
+    padding: 10px;
+}
+
+.recommend-req {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .requirement-container {
+        flex-direction: column;
+    }
+    
+    .minimum-req {
+        margin-top: 10px;
+    }
+
+    .recommend-req {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+body, 
+html {
+    height: 100%;
+}
+
+/* ----- navbar ----- */
+.top-navbar {
+    min-width: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 0, 0, .75);
+    z-index: 3;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    min-width: 5%;
+    max-width: 20%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+.logo img {
+    width: 125px;
+    height: 75px;
+}
+
+.navbar-item-container {
+    min-width: 50%;
+    order: 2;
+}
+
+.navbar-item-container input { 
+    display: none;
+}
+
+.navbar-nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.nav-item a {
+    color: white;
+    font-weight: normal;
+    font-size: x-large;
+    transition: .3s;
+}
+
+.nav-item a:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: black;
+}
+
+.nav-item-active {
+    padding: 20px;
+}
+
+.nav-item-active a {
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.nav-register {
+    min-width: 10%;
+    background-color: rgb(200, 0, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 3;
+}
+
+.nav-register a {
+    color: white;
+    font-weight: normal;
+    font-size: x-large;
+    transition: .3s;
+}
+
+.nav-register a:hover {
+    background-color: rgb(150, 0, 0);
+}
+
+.nav-register-active {
+    min-width: 10%;
+    background-color: rgb(150, 0, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 3;
+}
+
+.nav-register-active a {
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+/* ----- end navbar ----- */
+
+
+/* ----- main content ----- */
+.main-content {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+/* ----- end main content ----- */
+
+
+/* ----- footer ----- */
+.bottom-footer {
+    min-height: 40%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    padding-bottom: 10px;
+    color: white;
+    scroll-snap-align: end;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid rgba(255, 0, 0, .75);
+}
+
+.footer-container h2 {
+    padding: 10px;
+    color: red;
+}
+
+.footer-container p {
+    font-size: x-small;
+    text-align: center;
+}
+
+.social-media-list {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-list img {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-information img {
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ----- end footer ----- */
+
+
+/* responsive */
+@media only screen and (max-width: 800px) {
+    /* ----- navbar ----- */
+    .logo {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .nav-register {
+        min-width: 20%;
+        order: 2;
+    }
+
+    .nav-register-active {
+        min-width: 20%;
+        order: 2;
+    }
+
+    .navbar-item-container {
+        min-width: 20%;
+        order: 3;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        
+        user-select: none;
+        z-index: 1;
+    }
+
+    .navbar-nav-list {
+        display: none;
+    }
+
+    .navbar-nav-list li {
+        padding: 5px;
+    }
+
+    /* Hamburger menu */
+    .navbar-item-container input {
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 30px;
+        
+        cursor: pointer;
+        
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    .navbar-item-container span {
+        display: block;
+        width: 32px;
+        height: 5px;
+        margin-bottom: 4px;
+        
+        background: red;
+        border-radius: 5px;
+        
+        z-index: 1;
+        
+        transform-origin: 4px 0px;
+        
+        transition: transform .5s cubic-bezier(.77,.2,.05,1.0),
+                    background .5s cubic-bezier(.77,.2,.05,1.0),
+                    opacity .55s ease;
+    }
+
+    .navbar-item-container span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .navbar-item-container span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    .navbar-item-container input:checked {
+        position: absolute;
+    }
+
+    .navbar-item-container input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, 0px);
+        background: white;
+    }
+    .navbar-item-container input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(.2, .2);
+    }
+
+    .navbar-item-container input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    .navbar-item-container input:checked ~ .navbar-nav-list{
+        display: block;
+        position: fixed;
+        padding-top: 100px;
+        width: 30%;
+        background-color: rgba(0, 0, 0, .75);
+        background-size: cover;
+    }
+    /* Hamburger menu */
+    /* ----- end navbar ----- */
+
+    /* ----- main content ----- */
+    .main-content {
+        scroll-snap-align: none;
+    }
+    /* ----- end main content ----- */
+    
+    /* ----- footer ----- */
+    .bottom-footer {
+        scroll-snap-align: none;
+    }
+
+    .social-media-list img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .footer-information {
+        flex-direction: column;
+    }
+    
+    .footer-information img {
+        width: 120px;
+        height: 25px;
+        padding: 10px;
+        margin: 0;
+    }
+    /* ----- end footer ----- */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+/* responsive */
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(50, 50, 50);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(160, 0, 0);
+}

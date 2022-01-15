@@ -1,6 +1,5 @@
 .character-page {
     height: 100%;
-
     background-image: url("../images/background/bg_dock_char.png");
     background-color: black;
     background-repeat: no-repeat;
@@ -54,7 +53,7 @@
 
 @media only screen and (max-width: 800px) {
     .character-page {
-        padding-top: 50px;
+        padding: 80px;
     }
 
     .image-container {
