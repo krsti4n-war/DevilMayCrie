@@ -6,9 +6,46 @@ No	NIM		Name
 
 Group ID: ee5ac069-a842-ec11-90f0-d8d385fce79eAllocated Date : 11-11-2021 11:32
 
-Reference : 
-https://www.w3schools.com/howto/howto_css_full_page.asp
-https://www.w3schools.com/howto/howto_css_overlay.asp
-https://www.w3schools.com/html/html_youtube.asp
-https://codepen.io/EricPorter/full/XaOEpP
-https://codepen.io/erikterwan/pen/EVzeRP
+Reference for build website HTML : 
+Full page Background 	: https://www.w3schools.com/howto/howto_css_full_page.asp
+Character Overlay 	: https://www.w3schools.com/howto/howto_css_overlay.asp
+Iframe Youtube 		: https://www.w3schools.com/html/html_youtube.asp
+Jquery Home page Slider	: https://codepen.io/EricPorter/full/XaOEpP
+Hamburger Menu		: https://codepen.io/erikterwan/pen/EVzeRP
+
+Reference Image:
+	Background : 
+		about_story.png   	: https://azurlane.koumakan.jp/wiki/Memories/Tora!_Tora!_Tora!#/media/File:Memory_Tora!_Tora!_Tora!_Background_1.png
+		auto_battle.jpg		: https://gurugamer.com/mobile-games/azur-lane-beginners-guide-14105
+		bg_about.png		: https://azurlane.netojuu.com/w/images/2/28/Memory_Restless_Dreams_Background_2.png
+		bg_dock_char.png	: https://azurlane.netojuu.com/w/images/c/ca/Memory_Task_Background_1.png
+		bg_intro_game.png	: https://azurlane.netojuu.com/w/images/0/08/Memory_Fallen_Wings_Background_4.png
+		bg_pre_about.png	: https://azurlane.netojuu.com/w/images/8/81/Memory_Midway_Showdown_Background_1.png
+		bg_regis.png 		: https://azurlane.koumakan.jp/wiki/Loading_Screens#/media/File:Bg_hood_1.png
+		bg_sys.png		: https://azurlane.koumakan.jp/wiki/File:Bg_2020.09.17_1.png
+		character_home.jpg	: https://www.wallpaperbetter.com/en/search?q=Hood+%28Azur+Lane%29
+		slider_1.png		: https://azurlane.koumakan.jp/wiki/File:Bg_kaga_2.png
+		slider_2.png		: https://azurlane.koumakan.jp/wiki/File:Bg_enterprise_2.png
+		slider_3.png		: https://azurlane.netojuu.com/w/images/c/c3/Memory_Midway_Showdown_Background_3.png
+		slider_4.png		: https://azurlane.netojuu.com/w/images/b/b9/Memory_Scherzo_of_Iron_and_Blood_Background_4.png
+		slider_5.png		: https://azurlane.koumakan.jp/wiki/File:Bg_2021.04.01_1.png
+		system_home.png		: https://www.peakpx.com/en/hd-wallpaper-desktop-akyct
+
+
+	Character:
+		ArkRoyal_META.png : https://azurlane.koumakan.jp/wiki/Ark_Royal_META
+		Kawakaze.png	  : https://azurlane.koumakan.jp/wiki/Kawakaze
+		Takao_META.png	  : https://azurlane.koumakan.jp/wiki/Takao
+
+	Icon:
+		discord.png 	: https://www.flaticon.com/premium-icon/discord_3670325?term=discord&page=1&position=3&page=1&position=3&related_id=3670325&origin=search
+		facebook.png	: https://www.flaticon.com/free-icon/facebook_1051309?term=facebook&page=1&position=5&page=1&position=5&related_id=1051309&origin=search
+		instagram.png	: https://www.flaticon.com/free-icon/instagram_1384031?term=instagram&page=1&position=8&page=1&position=8&related_id=1384031&origin=search
+		twitter.png 	: https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=5&page=1&position=5&related_id=733635&origin=search
+		facebook.png	: https://www.flaticon.com/free-icon/youtube_1384028?term=yotube&page=1&position=1&page=1&position=1&related_id=1384028&origin=search
+		steamlogo2.png	: https://www.metrothegame.com/assets/Uploads/pages/images/steamlogo2.png
+		ps4logo.png	: https://www.metrothegame.com/assets/Footer-Logos/ps4logo.png
+		xbox.png	: https://www.metrothegame.com/assets/Footer-Logos/xbox.png
+		yostar.png	: https://media.vgm.io/orgs/52/2925/2925-1610448860.png
+		Icon.jpg	: https://www.redbubble.com/i/ipad-skin/Iron-Blood-Emblem-Azur-Lane-by-MisterAB/58594230.MHP6F
+
